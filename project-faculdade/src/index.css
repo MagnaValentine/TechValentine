@@ -1,0 +1,199 @@
+/* Configuração global do body */
+body {
+  background: linear-gradient(to right, #ff758c, #6a11cb);
+  height: 120vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilização do container principal */
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Estiliza o cabeçalho com o título e a imagem */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:40px; /* Reduz a distância entre o título e a imagem */
+  margin-bottom: 50px;
+}
+
+/* Estiliza o título */
+.header h1 {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.7);
+  margin: 0; /* Remove margens extras */
+  display: flex;
+  align-items: center; /* Mantém alinhado verticalmente */
+  gap: 10px; /* Mantém um espaço uniforme */
+  filter: drop-shadow(4px 4px 10px rgba(255, 255, 255, 1));
+}
+
+
+/* Animação de brilho no título */
+@keyframes glow {
+  0% {
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    text-shadow: 2px 2px 7px rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
+  }
+}
+.header h1 {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+  animation: glow 1.5s infinite alternate; /* Faz o efeito repetir */
+}
+
+
+/* Ajuste na imagem do livro */
+.books-image {
+  width: 60px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  filter: drop-shadow(4px 4px 10px rgba(255, 255, 255, 0.8));
+  vertical-align: middle; /* Alinha melhor a imagem */
+}
+
+/* Efeito na imagem ao passar o mouse */
+.books-image:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(4px 4px 10px rgba(255, 255, 255, 1));
+}
+
+/* Layout central */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px; /* Aumenta o espaçamento entre o login e a frase */
+  width: 105%;
+  max-width: 1200px;
+  margin: auto; /* Centraliza horizontalmente */
+  padding-left: 12%; /* Empurra os elementos um pouco para a direita */
+}
+
+
+/* Alinhamento geral */
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1100px;
+  margin:  auto;
+}
+
+/* Caixa de login */
+.login-container {
+  background: linear-gradient(to bottom, #90ece9, #12fff7);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: none;
+  width: 350px;
+  height: px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  border: none;
+
+}
+
+/* Animação no login */
+.login-container:hover {
+  transform: scale(1.05);
+}
+
+/* Título do login */
+.login-container h2 {
+  color: black;
+  font-size: 1.5rem;
+}
+
+/* Campos de entrada */
+input {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+/* Ajuste dos campos */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 10px;
+  width: 90%;
+}
+
+/* Botão de login */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  width: 100%;
+}
+
+/* Efeito no botão ao passar o mouse */
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Frase motivacional */
+.motivational-box {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  width: 50%;
+  padding: 5px;
+  text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.7);
+  animation: glowText 2.5s infinite alternate;
+  padding-right: 20%;
+}
+
+/* Animação na frase motivacional */
+@keyframes glowText {
+  0% {
+    text-shadow: 5px 2px 8px rgba(255, 255, 255, 0.87);
+  }
+  100% {
+    text-shadow: 4px 4px 20px rgba(255, 255, 255, 1);
+  }
+}
