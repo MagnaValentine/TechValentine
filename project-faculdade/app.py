@@ -20,6 +20,7 @@ except cx_Oracle.DatabaseError as e:
 # Chave secreta para tokens JWT
 app.config["SECRET_KEY"] = "minha_chave_secreta"
 
+
 # 📌 Rota de Login
 @app.route("/login", methods=["POST"])
 def login():
